@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Medium.ttf);
+  font-weight: bold;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: #424242;
+}
+body {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__header {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.app_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.app_logo .app__title {
+  margin-right: 1rem;
+}
+.app__title2 {
+  display: none;
+}
+.menu__collapse {
+  display: none;
+}
+.app__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.app__links li {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.app__links li.active {
+  color: #5a47ab;
+  font-weight: 600;
+}
+.app__showcase {
+  display: flex;
+  margin: 5rem 0;
+}
+
+.app__showcase-info {
+  flex: 6;
+  padding: 0 3rem;
+}
+
+.app__showcase-info h1,
+h3 {
+  font-size: 52px;
+  margin: 0%;
+}
+.app__showcase-info h1 {
+  color: #d05270;
+  font-weight: bold;
+}
+.app__showcase-info h3 {
+  font-weight: 500;
+}
+.app__showcase-info p {
+  font: size 18px;
+  font-weight: 400;
+}
+
+.app__showcase-image {
+  flex: 4;
+  padding: 0 3rem;
+}
+
+.app__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.app__links .app__link {
+ 
+  color: #fff;
+  font-size: 12px;
+  width: 30%;
+  height: 60%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__links .app__link img {
+  margin-right: 2rem;
+}
+.app__links .app__link.twitter {
+  background-color: #47acdf;
+  height: auto;
+}
+
+.app__links .app__link.linkedin {
+  background-color: #1275b1;
+}
+
+.app__links .app__link.medium {
+  background-color: #000;
+  height: auto;
+}
+
+.app__blog-categories {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.app__blog-categories .item {
+  list-style: 500;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.app__blog-categories .item.active {
+  color: #d05270;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #d05270;
+  padding: 0 2rem; 
+  padding-bottom: 0.5rem;
+}
+
+.app__post-list {
+  border: 5px solid red ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app__post-list .app__post-card {
+  border: 5px solid red ;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 3rem;
+}
+.app__post-list .app__post-card .post-date {
+  font-size: 14px;
+  font-weight: 600;
+}
+.app__post-list .app__post-card .post-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.app__post-list .app__post-card .post-info {
+  font-weight: 400;
+  margin: 0.5rem;
+}
+.app__post-list .app__post-card .post-link {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #d05270;
+  border-bottom: 1px solid #d05270;
+  padding-bottom: 0.5rem;
+  width: fit-content;
+}
+.footer {
+  position: relative;
+  text-align: center;
+  margin-top: 5rem 0;
+}
+@media only screen and (max-width: 850px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+
+  .app__links-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    transition: height 500ms ease-in-out;
+    height: 100%;
+  }
+  .app__links-container.active {
+    display: block;
+  }
+  .app__links {
+    z-index: 1;
+    flex-direction: column;
+  }
+  .app__links li {
+    margin: bottom 1.5rem;
+    font-size: 20px;
+  }
+}
+
+.menu__collapse {
+  display: block;
+}
+.app__title2 {
+  display: block;
+  margin-right: 1rem;
+}
+.app__title {
+  display: none;
+}
