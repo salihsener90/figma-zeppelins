@@ -8,5 +8,5 @@ Bu projede HTML, CSS,  teknolojileri kullanılmıştır.
 
 <h4>Projeye ait ekran resmi</h4>
 
-![](figma-zeppelins)
+![](figma-zeppelins.gif)
 
