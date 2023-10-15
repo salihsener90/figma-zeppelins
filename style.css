@@ -168,14 +168,14 @@ h3 {
 }
 
 .app__post-list {
-  border: 5px solid red ;
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .app__post-list .app__post-card {
-  border: 5px solid red ;
+ 
   display: flex;
   flex: 0 0 50%;
   flex-direction: column;
